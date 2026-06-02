@@ -568,45 +568,17 @@ body.cursor-hover .cursor-follower {
     transform: rotate(-45deg) translate(5px, -5px);
 }
 
-@media(max-width: 900px) {
-    .nav-toggle {
-        display: flex;
-    }
-
-    .nav-links {
-        position: fixed;
-        top: var(--nav-h);
-        left: 0;
-        right: 0;
-        background: rgba(10, 10, 10, 0.97);
-        backdrop-filter: blur(24px);
-        flex-direction: column;
-        gap: 0;
-        padding: 1rem 0;
-        transform: translateY(-110%);
-        transition: transform var(--transition);
-        border-bottom: 1px solid var(--border);
-    }
-
-    .nav-links.open {
-        transform: translateY(0);
-    }
-
-    .nav-links li {
-        width: 100%;
-    }
-
-    .nav-links a {
-        display: block;
-        padding: 1rem 2rem;
-        font-size: 1rem;
-    }
+@media (max-width: 900px) {
 
     .nav-cta {
-        margin: 0.5rem 2rem;
         display: block;
+        width: calc(100% - 30px);
+        margin: 20px auto;
         text-align: center;
+        padding: 14px 20px;
+        box-sizing: border-box;
     }
+
 }
 
 /* --- HERO --- */
@@ -2867,4 +2839,9 @@ button {
         font-size: 1.3rem;
         font-weight: 700;
     }
+}
+
+.hero-orb,
+.cta-orb {
+    display: none !important;
 }
